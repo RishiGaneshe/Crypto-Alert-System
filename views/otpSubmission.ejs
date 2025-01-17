@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Sign Up Form</title>
+    <style>
+        /* General Reset */
+        body, h1, div, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+            color: #333;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+        }
+
+        .form-group {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        button[type="submit"] {
+            padding: 12px;
+            width: 100%;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 123, 255, 0.4);
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background: linear-gradient(135deg, #0056b3, #0086ff);
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sign Up</h1>
+        <form name="extended-signup-form" action="/sign-up/otp-submission" method="POST">
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" placeholder="Enter Email" id="email" name="email" value="<%= email %>" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your username" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" id="password" name="password" required>
+            </div>
+
+            <label for="OTP">OTP</label>
+            <input type="text" placeholder="Enter OTP" id="otp" name="otp" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Cryptocurrency Prices</title>
+  <link rel="stylesheet" href="crypto.styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Real-Time Cryptocurrency Prices</h1>
+    <div class="prices">
+      <div class="price-item">
+        <h2>Bitcoin (BTC)</h2>
+        <p id="bitcoin-price">Loading...</p>
+      </div>
+      <div class="price-item">
+        <h2>Ethereum (ETH)</h2>
+        <p id="ethereum-price">Loading...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script src="crypto.script.js"></script>
+</body>
+</html>

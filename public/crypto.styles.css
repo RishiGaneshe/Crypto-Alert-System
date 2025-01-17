@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #2c3e50;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    color: #6a11cb;
+    margin-bottom: 20px;
+  }
+  
+  .prices {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .price-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .price-item h2 {
+    font-size: 1.5em;
+    color: #2575fc;
+  }
+  
+  .price-item p {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    margin-top: 10px;
+  }
+  

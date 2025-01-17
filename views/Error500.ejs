@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 500 Internal Server Error</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #2f2f4f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px; /* Add padding for smaller screens */
+            box-sizing: border-box; /* Ensure padding is included in total width/height */
+            color: #ffffff; /* Set default text color to white */
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); /* Add glassmorphism effect */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%; /* Make container responsive */
+        }
+
+        h1 {
+            color: #ff4c4c;
+            font-size: 24px;
+            margin-bottom: 20px; /* Add margin for spacing */
+        }
+
+        p {
+            color: #ffffff;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+            font-size: 16px; /* Increase button font size */
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px; /* Adjust heading size for small screens */
+            }
+
+            p {
+                font-size: 14px; /* Adjust paragraph size for small screens */
+            }
+
+            .button {
+                padding: 10px 20px; /* Adjust button padding */
+                font-size: 14px; /* Adjust button font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Internal Server Problem</h1>
+        <p>We're sorry.There is some problem in the internal server.Please try again after some time.</p>
+        <a href="/login" class="button">Go to Login</a>
+    </div>
+</body>
+</html>
