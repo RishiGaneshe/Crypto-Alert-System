@@ -1,4 +1,9 @@
 # 🚀 Cryptocurrency Market API – Real-Time Data, Caching & Alerts  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node-dot-js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 A **high-performance cryptocurrency API** that provides **real-time market data**, caches responses using **Redis**, and allows users to set **price alerts** with instant email notifications via **SendGrid**. The system also includes a **WebSocket** connection for continuous updates, ensuring seamless tracking.  
 
